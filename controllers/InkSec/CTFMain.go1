@@ -1,0 +1,14 @@
+package InkSec
+
+import (
+	"github.com/astaxie/beego"
+)
+
+type MainController struct {
+	BaseController
+}
+
+func (this *MainController) Get() {
+	this.Data["text"] = this.Ctx.Input.Param(":id")
+	this.TplNames = "index.tpl"
+}

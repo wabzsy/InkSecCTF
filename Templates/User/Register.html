@@ -1,0 +1,35 @@
+<fieldset>
+	<legend>添加用户</legend>
+	<form method="post">
+	<table>
+		<tbody>
+		<tr>
+			<th>用户名：</th>
+			<td><input name="UserName" value="{{.input.UserName}}" type="text" /> <span>{{.Errmsg.UserName}}</span></td>
+		</tr>
+		<tr>
+			<th>密码：</th>
+			<td><input name="Password" value="" type="password" /> <span>{{.Errmsg.Password}}</span></td>
+		</tr>
+		<tr>
+			<th>确认密码：</th>
+			<td><input name="ConfirmPassword" value="" type="password" /> <span>{{.Errmsg.ConfirmPassword}}</span></td>
+		</tr>
+		<tr>
+			<th>邮箱：</th>
+			<td><input name="Email" value="{{.input.Email}}" type="text" /> <span>{{.Errmsg.Email}}</span></td>
+		</tr>
+		<tr>
+			<th>邀请码：</th>
+			<td><input name="InviteKey" value="{{.input.InviteKey}}" type="text" /> <span>{{.Errmsg.InviteKey}}</span></td>
+		</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th></th>
+				<td><input type="submit" value="提交" />{{.Errmsg.Other}}</td>
+			</tr>
+		</tfoot>
+	</table>
+	</form>
+</fieldset>

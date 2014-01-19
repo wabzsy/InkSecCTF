@@ -1,0 +1,39 @@
+<fieldset>
+	<legend>用户信息修改</legend>
+	<form method="post">
+	<table>
+		<tbody>
+		<tr>
+			<th>用户名：</th>
+			<td>{{.User.UserName}}</td>
+		</tr>
+		<tr>
+			<th>邮箱：</th>
+			<td><input name="Email" value="{{.User.Email}}" type="text" /> <span>{{.Errmsg.Email}}</span></td>
+		</tr>
+		<tr>
+			<th>QQ：</th>
+			<td><input name="QQ" value="{{.User.QQ}}" type="text" /> <span>{{.Errmsg.QQ}}</span></td>
+		</tr>
+		<tr>
+			<th>电话：</th>
+			<td>+86<input name="Phone" value="{{.User.Phone}}" type="text" /> <span>{{.Errmsg.Phone}}</span></td>
+		</tr>
+		<tr>
+			<th>学校：</th>
+			<td><input name="School" value="{{.User.School}}" type="text" /> <span>{{.Errmsg.School}}</span></td>
+		</tr>
+		<tr>
+			<th>学号：</th>
+			<td><input name="StuId" value="{{.User.StuId}}" type="text" /> <span>{{.Errmsg.StuId}}</span></td>
+		</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th></th>
+				<td><input type="submit" value="提交" />{{.Errmsg.Other}}</td>
+			</tr>
+		</tfoot>
+	</table>
+	</form>
+</fieldset>

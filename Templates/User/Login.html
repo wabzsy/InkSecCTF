@@ -1,0 +1,26 @@
+<fieldset>
+	<legend>用户登陆</legend>
+	<form method="post">
+	<table>
+		<tbody>
+		<tr>
+			<th>用户名：</th>
+			<td><input name="UserName" value="{{.User.UserName}}" type="text" /> <span>{{.Errmsg.UserName}}</span></td>
+		</tr>
+		<tr>
+			<th>密码：</th>
+			<td><input name="Password" value="" type="password" /> <span>{{.Errmsg.Password}}</span></td>
+		</tr>
+		<tr>
+			<td><label><input type="checkbox" name="Remember" value="yes">记住我</label></td>
+		</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th></th>
+				<td><input type="submit" value="提交" />{{.Errmsg.Other}}</td>
+			</tr>
+		</tfoot>
+	</table>
+	</form>
+</fieldset>
